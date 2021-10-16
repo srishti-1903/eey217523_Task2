@@ -1,0 +1,9 @@
+
+Usage: report_power [-help] [-cap] [-cell <string>] [-cell_type <string>] [-clock_domain <string>] [-clock_gating_efficiency] [-clock_network <string>]
+                    [-cluster_gating_efficiency] [-comb_seq_power] [-count_seq_elements_in_clock_network] [-format <string>] [-hierarchy <string>] [-instances <string>]
+                    [-leakage] [-net] [-no_wrap] [-nworst <string>] [-o <string>] [-outfile <string>] [-output <string>] [-pg_net <string>] [-pg_pin]
+                    [-power_domain <string>] [-rail_analysis_format <string>] [-register_gating_efficiency] [-report_prefix <string>] [-sort <string>]
+                    [-thermal_conductivity_inputs <string>] [-thermal_leakage_temp <string>] [-thermal_power_map_file <string>] [-thermal_power_map_format <string>]
+                    [-thermal_power_map_tile <string>] [-threshold <string>] [-threshold_voltage_group <string>] [-toggle_rate] [-view <string>]
+
+**ERROR: (IMPTCM-48):	">" is not a legal option for command "report_power". Either the current option or an option prior to it is not specified correctly.

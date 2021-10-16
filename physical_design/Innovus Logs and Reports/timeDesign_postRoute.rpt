@@ -1,0 +1,247 @@
+Switching SI Aware to true by default in postroute mode   
+**WARN: (IMPEXT-3493):	The design extraction status has been reset by set_analysis_view/update_rc_corner or setExtractRCMode  command. The parasitic data can be regenerated either by extracting the design using the extractRC command or by loading the SPEF or RCDB file(s). To prevent resetting of the extraction status, avoid changing extraction modes.
+Type 'man IMPEXT-3493' for more detail.
+ Reset EOS DB
+Ignoring AAE DB Resetting ...
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/clk of net clk because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/rst of net rst because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/out[2] of net out[2] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/out[1] of net out[1] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/out[0] of net out[0] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#Start routing data preparation.
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.100.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Voltage range [0.900 - 1.100] has 1 net.
+#Voltage range [0.000 - 1.100] has 12 nets.
+# ME1          H   Track-Pitch = 0.2000    Line-2-Via Pitch = 0.1850
+# ME2          V   Track-Pitch = 0.2000    Line-2-Via Pitch = 0.2000
+# ME3          H   Track-Pitch = 0.2000    Line-2-Via Pitch = 0.2000
+# ME4          V   Track-Pitch = 0.2000    Line-2-Via Pitch = 0.2000
+# ME5          H   Track-Pitch = 0.4000    Line-2-Via Pitch = 0.4000
+# ME6          V   Track-Pitch = 0.4000    Line-2-Via Pitch = 0.4000
+# ME7          H   Track-Pitch = 0.8000    Line-2-Via Pitch = 0.8000
+# ME8          V   Track-Pitch = 0.8000    Line-2-Via Pitch = 0.8000
+# AL_RDL       H   Track-Pitch = 6.0000    Line-2-Via Pitch = 5.4500
+#Regenerating Ggrids automatically.
+#Auto generating G-grids with size=15 tracks, using layer ME3's pitch = 0.2000.
+#Using automatically generated G-grids.
+#Done routing data preparation.
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1269.07 (MB), peak = 1704.38 (MB)
+#Extract in post route mode
+#
+#Start tQuantus RC extraction...
+#Start building rc corner(s)...
+#Number of RC Corner = 1
+#Corner Default_rc_corner /afs/iitd.ac.in/user/e/ee/eey217523/counter_physical/TechFile/qrcTechFile.tch 25.000000 (real) 
+#ME1_C -> ME1 (1)
+#ME2_C -> ME2 (2)
+#ME3_C -> ME3 (3)
+#ME4_C -> ME4 (4)
+#ME5_C -> ME5 (5)
+#ME6_C -> ME6 (6)
+#ME7_C -> ME7 (7)
+#ME8_C -> ME8 (8)
+#ALRDL_C -> AL_RDL (9)
+#SADV_On
+# Corner(s) : 
+#Default_rc_corner [25.00]
+# Corner id: 0
+# Layout Scale: 1.000000
+# Has Metal Fill model: yes
+# Temperature was set
+# Temperature : 25.000000
+# Ref. Temp   : 25.000000
+#SADV_Off
+#
+#layer[5] tech width 400 != ict width 200.0
+#
+#layer[5] tech spc 400 != ict spc 200.0
+#
+#layer[6] tech width 400 != ict width 200.0
+#
+#layer[6] tech spc 400 != ict spc 200.0
+#
+#layer[7] tech width 800 != ict width 400.0
+#
+#layer[7] tech spc 800 != ict spc 400.0
+#
+#layer[8] tech width 800 != ict width 4000.0
+#
+#layer[8] tech spc 800 != ict spc 4000.0
+#total pattern=165 [9, 450]
+#( rc_model.bin ) does not exist.
+#invalid or missing tQuantus model file
+#rc model rebuild is required for this corner(s)
+#1 rcmodel(s) requires rebuild
+#Rebuild RC model file for all corners.
+#Start building rc corner(s)...
+#Number of RC Corner = 1
+#Corner Default_rc_corner /afs/iitd.ac.in/user/e/ee/eey217523/counter_physical/TechFile/qrcTechFile.tch 25.000000 (real) 
+#ME1_C -> ME1 (1)
+#ME2_C -> ME2 (2)
+#ME3_C -> ME3 (3)
+#ME4_C -> ME4 (4)
+#ME5_C -> ME5 (5)
+#ME6_C -> ME6 (6)
+#ME7_C -> ME7 (7)
+#ME8_C -> ME8 (8)
+#ALRDL_C -> AL_RDL (9)
+#SADV_On
+# Corner(s) : 
+#Default_rc_corner [25.00]
+# Corner id: 0
+# Layout Scale: 1.000000
+# Has Metal Fill model: yes
+# Temperature was set
+# Temperature : 25.000000
+# Ref. Temp   : 25.000000
+#SADV_Off
+#
+#layer[5] tech width 400 != ict width 200.0
+#
+#layer[5] tech spc 400 != ict spc 200.0
+#
+#layer[6] tech width 400 != ict width 200.0
+#
+#layer[6] tech spc 400 != ict spc 200.0
+#
+#layer[7] tech width 800 != ict width 400.0
+#
+#layer[7] tech spc 800 != ict spc 400.0
+#
+#layer[8] tech width 800 != ict width 4000.0
+#
+#layer[8] tech spc 800 != ict spc 4000.0
+#total pattern=165 [9, 450]
+#( rc_model.bin ) does not exist.
+#invalid or missing tQuantus model file
+#num_tile=11922 avg_aspect_ratio=1.117847 
+#Vertical num_row 39 per_row= 304 halo= 120000 
+#hor_num_col = 164 final aspect_ratio= 0.477715
+#Build RC corners: cpu time = 00:00:17, elapsed time = 00:00:25, memory = 1396.70 (MB), peak = 1704.38 (MB)
+#Length limit = 200 pitches
+#opt mode = 2
+#Start routing data preparation.
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.100.
+#Voltage range [0.000 - 1.100] has 12 nets.
+#Voltage range [0.900 - 1.100] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Using user defined Ggrids in DB.
+#Done routing data preparation.
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1311.86 (MB), peak = 1704.38 (MB)
+#Start routing data preparation.
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.100.
+#Voltage range [0.000 - 1.100] has 12 nets.
+#Voltage range [0.900 - 1.100] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Using user defined Ggrids in DB.
+#Done routing data preparation.
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1311.86 (MB), peak = 1704.38 (MB)
+#
+#Extract using 30 x 30 Hboxes
+#Extract 1 hboxes with single thread on machine with  2.35GHz 512KB Cache 120CPU...
+#Process 0 special clock nets for rc extraction
+#0 temporary NDR added
+#Need to add unplaced ipin PIN:out[0] of net 0(out[0]) into rc tree
+#WARNING (NREX-80) Net clk does not have a driver pin. It may have incomplete route.
+#Need to add unplaced ipin PIN:clk of net 1(clk) into rc tree
+#Need to add unplaced ipin PIN:out[2] of net 2(out[2]) into rc tree
+#WARNING (NREX-80) Net rst does not have a driver pin. It may have incomplete route.
+#Need to add unplaced ipin PIN:rst of net 3(rst) into rc tree
+#Need to add unplaced ipin PIN:out[1] of net 4(out[1]) into rc tree
+#Total 12 nets were built. 0 nodes added to break long wires. 0 net(s) have incomplete routes.
+#Run Statistics for Extraction:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 .
+#   Increased memory =     0.09 (MB), total memory =  1311.95 (MB), peak memory =  1704.38 (MB)
+#Simplify RC tree: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1311.95 (MB), peak = 1704.38 (MB)
+#RC Statistics: 42 Res, 27 Ground Cap, 0 XCap (Edge to Edge)
+#RC V/H edge ratio: 0.36, Avg V/H Edge Length: 1040.00 (20), Avg L-Edge Length: 5371.43 (7)
+#Start writing rcdb into /tmp/innovus_temp_75818_raman1_eey217523_QQ8God/nr75818_0ludcB.rcdb.d
+#Finish writing rcdb with 59 nodes, 47 edges, and 0 xcaps
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1313.68 (MB), peak = 1704.38 (MB)
+Restoring parasitic data from file '/tmp/innovus_temp_75818_raman1_eey217523_QQ8God/nr75818_0ludcB.rcdb.d' ...
+Reading RCDB with compressed RC data.
+Reading RCDB with compressed RC data.
+#
+#Restore RCDB.
+#
+#Complete tQuantus RC extraction.
+#Cpu time = 00:00:21
+#Elapsed time = 00:00:30
+#Increased memory = 44.52 (MB)
+#Total memory = 1313.59 (MB)
+#Peak memory = 1704.38 (MB)
+#
+#0 inserted nodes are removed
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: counter
+# Design Mode: 90nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB
+# Signoff Settings: SI On 
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Calculate early delays in OCV mode...
+Calculate late delays in OCV mode...
+**WARN: (IMPESI-2017):	There is no coupling capacitance found in the design. Use setDelayCalMode -siAware false to perform base delay analysis. SI analysis requires the parasitics database to contain coupling capacitance. To perform SI analysis, use 'setExtractRCMode -coupled true' prior to extraction or load a SPEF with coupling capacitance and re-run. If the design is small and does not have any coupling, this message can be ignored.
+Reading RCDB with compressed RC data.
+AAE_INFO: 1 threads acquired from CTE.
+Total number of fetched objects 12
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 14,  78.6 percent of the nets selected for SI analysis
+End delay calculation. (MEM=2430.51 CPU=0:00:00.0 REAL=0:00:00.0)
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 2430.5M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 2430.5M)
+Starting SI iteration 2
+AAE_INFO: 1 threads acquired from CTE.
+Calculate early delays in OCV mode...
+Calculate late delays in OCV mode...
+**WARN: (IMPESI-2017):	There is no coupling capacitance found in the design. Use setDelayCalMode -siAware false to perform base delay analysis. SI analysis requires the parasitics database to contain coupling capacitance. To perform SI analysis, use 'setExtractRCMode -coupled true' prior to extraction or load a SPEF with coupling capacitance and re-run. If the design is small and does not have any coupling, this message can be ignored.
+Glitch Analysis: View worst_Case -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View worst_Case -- Total Number of Nets Analyzed = 12. 
+Total number of fetched objects 12
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 14,  0.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=2406.55 CPU=0:00:00.0 REAL=0:00:00.0)
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
+Setup views included:
+ worst_Case 
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):|  8.676  |  9.127  |  8.676  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|    7    |    3    |    6    |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 65.957%
+Total number of glitch violations: 0
+------------------------------------------------------------
+Reported timing to dir ./timingReports
+Total CPU time: 21.81 sec
+Total Real time: 30.0 sec
+Total Memory Usage: 2343.78125 Mbytes
+Reset AAE Options
